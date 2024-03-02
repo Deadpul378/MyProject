@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailwindCSS</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="">
+      <div class="flex bg-header_theme w-full items-center">
+        <a href="./index.html"
+          ><img src="./images/logo.png" alt="" width="100px" height="100px"
+        /></a>
+        <div class="w-[600px]">
+          <p class="text-white">
+            Национальный аэрокосмический университет им. Н. Е. Жуковского
+            "Харьковский авиационный институт"
+          </p>
+          <p class="text-white">
+            Кафедра математического моделирования и искусственного интеллекта
+          </p>
+        </div>
+        <div class="ml-auto pr-10 space-x-10">
+          <a
+            href=""
+            class="text-white hover:text-triky_blue ease-in-out duration-300"
+            >Русский</a
+          >
+          <a
+            href=""
+            class="text-white hover:text-triky_blue ease-in-out duration-300"
+            >Українська</a
+          >
+          <a
+            href=""
+            class="text-white hover:text-triky_blue ease-in-out duration-300"
+            >English</a
+          >
+        </div>
+      </div>
+      <nav class="min-h-[50px] bg-nav_theme flex">
+        <ul class="flex space-x-10 pl-7 items-center">
+          <li
+            class="hover:text-white ease-in-out duration-300 flex items-center"
+          >
+            <a href="./index.html" class="py-[13px]">Главная</a>
+          </li>
+          <li
+            class="hover:text-white ease-in-out duration-300 flex items-center"
+          >
+            <a href="" class="py-[13px]">Новости</a>
+          </li>
+          <li class="relative inline-block">
+            <p
+              class="hover:text-white ease-in-out duration-300 focus:outline-none py-[13px] cursor-pointer"
+            >
+              Специальности <span class="text-xs">▼</span>
+            </p>
+            <ul
+              class="absolute opacity-0 bg-[#DCDCDC] w-48 transition-opacity duration-300 text-xs"
+            >
+              <li class="block text-gray-500 py-2 px-2">Бакалаврат</li>
+              <li class="block text-black py-2 px-2">
+                <a href="">Компьютерные науки</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Прикладная математика</a>
+              </li>
+              <li class="block text-gray-500 py-2 px-2">Магистратура</li>
+              <li class="block text-black py-2 px-2">
+                <a href="">Компьютерные науки</a>
+              </li>
+              <li class="block text-black py-2 px-2">
+                <a href="">Прикладная математика</a>
+              </li>
+            </ul>
+          </li>
+          <li class="relative inline-block">
+            <p
+              class="hover:text-white ease-in-out duration-300 focus:outline-none py-[13px] cursor-pointer"
+            >
+              Абитуриенту <span class="text-xs">▼</span>
+            </p>
+            <ul
+              class="absolute opacity-0 bg-[#DCDCDC] w-48 transition-opacity duration-300 text-xs"
+            >
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Общая информация</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Правила приёма</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Поступление из техникумов и коллеждей</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Перечень изучаемых дисциплин</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Трудоустройство выпускников</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Международное сотрудничество</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Отзывы выпускников</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">События для абитуриента</a>
+              </li>
+              <li class="block text-black py-2 px-2">
+                <a href="">Контакты</a>
+              </li>
+            </ul>
+          </li>
+          <li class="relative inline-block">
+            <p
+              class="hover:text-white ease-in-out duration-300 focus:outline-none py-[13px] cursor-pointer"
+            >
+              Кафедра <span class="text-xs">▼</span>
+            </p>
+            <ul
+              class="absolute opacity-0 bg-[#DCDCDC] w-48 transition-opacity duration-300 text-xs"
+            >
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">О кафедре</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">История кафедры</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Преподаватели</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Новости</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Научные направления</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Международное сотрудничество </a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Научные разработки</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Добавить отзыв выпускника</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Олимпиады</a>
+              </li>
+              <li class="block text-black py-2 px-2 border-b border-gray-400">
+                <a href="">Нормативная документация</a>
+              </li>
+              <li class="block text-black py-2 px-2">
+                <a href="">Контакты</a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="hover:text-white ease-in-out duration-300 flex items-center"
+          >
+            <a href="" class="py-[13px]">Наши достижения</a>
+          </li>
+        </ul>
+        <div class="relative flex ml-auto items-center pr-[50px]">
+          <input
+            id="searchInput"
+            type="text"
+            class="bg-gray-200 w-0 transition-all duration-300 text-xl"
+            placeholder="Type your text here"
+          />
+          <button
+            id="searchButton"
+            class="hover:text-white transition duration-300 focus:outline-none py-3 cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="h-6 w-6 cursor-pointer text-black"
+              id="searchIcon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-5-5m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

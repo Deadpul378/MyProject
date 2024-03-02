@@ -1,0 +1,23 @@
+{
+  "name": "MyProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tailwindcss -i ./input.css -o ./css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deadpul378/MyProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deadpul378/MyProject/issues"
+  },
+  "homepage": "https://github.com/Deadpul378/MyProject#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
