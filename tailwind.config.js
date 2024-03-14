@@ -22,6 +22,12 @@ module.exports = {
         triky_blue: "#1E90FF",
         aqua: "#00FFFF",
       },
+      screens: {
+        sm: "320px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1920px",
+      },
     },
   },
   plugins: [],
