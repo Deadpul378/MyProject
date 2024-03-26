@@ -22,13 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const handleMouseLeaveButton = function (event) {
     timeout = setTimeout(() => {
-      const dropdown = event.currentTarget
-        ? event.currentTarget.nextElementSibling
-        : null;
+      const dropdown = event.currentTarget ? event.currentTarget.nextElementSibling : null;
       if (dropdown) {
-        const isCursorOnButton = event.currentTarget.contains(
-          document.activeElement
-        );
+        const isCursorOnButton = event.currentTarget.contains(document.activeElement);
         if (!isCursorOnButton) {
           dropdown.classList.remove("opacity-100");
           dropdown.classList.add("opacity-0");
@@ -80,8 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    dropdown.style.maxHeight =
-      dropdown.style.maxHeight === "0px" ? "100%" : "0";
+    dropdown.style.maxHeight = dropdown.style.maxHeight === "0px" ? "100%" : "0";
   }
 
   function keepDropdownOpen() {
@@ -91,6 +86,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Изначально скрываем все выпадающие списки
 
   function updateEventListeners() {
+    dropdowns.forEach((dropdown) => {
+      dropdown.classList.add("opacity-0");
+      dropdown.classList.remove("opacity-100");
+    });
     if (window.innerWidth > 767) {
       dropdowns.forEach((dropdown) => {
         dropdown.style.maxHeight = "";
@@ -145,6 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /////////////////////////////////////////////
 document.querySelector("#searchButton").addEventListener("click", function () {
   var input = document.querySelector("#searchInput");
+
   if (input.classList.contains("w-0")) {
     input.classList.remove("w-0");
     input.classList.add("w-48");
@@ -157,9 +157,20 @@ document.querySelector("#searchButton").addEventListener("click", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const burgerButton = document.querySelector("#burgerButton");
   const navItems = document.querySelector("#menuItems");
-
+  const dropdowns = document.querySelectorAll("#aboba");
+  let clicks = 0;
   burgerButton.addEventListener("click", function () {
-    navItems.classList.toggle("hidden"); // Переключает видимость
-    navItems.classList.toggle("flex"); // Делает меню flex, чтобы оно показалось
+    navItems.classList.toggle("hidden");
+    navItems.classList.toggle("flex");
+
+    clicks++;
+
+    if (clicks % 2 == 0) {
+      dropdowns.forEach((dropdown) => {
+        dropdown.classList.add("opacity-0");
+        dropdown.classList.remove("opacity-100");
+        dropdown.style.maxHeight = "0px";
+      });
+    }
   });
 });
