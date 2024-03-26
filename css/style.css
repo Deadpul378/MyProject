@@ -885,6 +885,10 @@ video {
   line-height: 1rem;
 }
 
+.text-2xl {
+  font-size: 1.563rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1030,6 +1034,14 @@ video {
 
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.441rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
   }
 
   .md\:transition-opacity {
