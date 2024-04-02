@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const dropdown = event.currentTarget.nextElementSibling;
     dropdown.classList.toggle("opacity-0");
     dropdown.classList.toggle("opacity-100");
-    dropdown.classList.remove("md:hidden"); // Add this line
+    dropdown.classList.remove("md:hidden");
   };
 
   const handleMouseLeaveButton = function (event) {
@@ -28,14 +28,14 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!isCursorOnButton) {
           dropdown.classList.remove("opacity-100");
           dropdown.classList.add("opacity-0");
-          dropdown.classList.add("md:hidden"); // Add this line
+          dropdown.classList.add("md:hidden");
         }
       } else {
         const activeDropdown = document.querySelector("#aboba.opacity-100");
         if (activeDropdown) {
           activeDropdown.classList.remove("opacity-100");
           activeDropdown.classList.add("opacity-0");
-          activeDropdown.classList.add("md:hidden"); // Add this line
+          activeDropdown.classList.add("md:hidden");
         }
       }
     }, 200);
@@ -82,8 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function keepDropdownOpen() {
     clearTimeout(timeout);
   }
-
-  // Изначально скрываем все выпадающие списки
 
   function updateEventListeners() {
     dropdowns.forEach((dropdown) => {
@@ -134,10 +132,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Инициализация при загрузке
   updateEventListeners();
 
-  // Обновление при изменении размера окна
   window.addEventListener("resize", updateEventListeners);
 });
 
